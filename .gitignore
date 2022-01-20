@@ -1,0 +1,3 @@
+/Back-End/soundboard-api/db/*.sqlite3
+/Back-End/soundboard-api/log/*
+/Back-End/soundboard-api/tmp/*
