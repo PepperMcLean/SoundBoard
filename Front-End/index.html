@@ -6,6 +6,28 @@
   <title>Document</title>
 </head>
 <body>
+  <div hidden id="hiddenSignup">
+    <h2>Sign Up</h2>
+
+    <form action="/action_page.php">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" autofocus placeholder="JohnM24"><br>
+      <label for="password">Password:</label><br>
+      <input type="text" id="password" name="password" autofocus placeholder="**********"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div hidden id="hiddenLogin">
+    <h2>Log In</h2>
+
+    <form action="/action_page.php">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" autofocus placeholder="JohnM24"><br>
+      <label for="password">Password:</label><br>
+      <input type="text" id="password" name="password" autofocus placeholder="**********"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
   <button type="button" id="signup">Sign Up</button>
   <button type="button" id="login">Log In</button>
   <script src="src/index.js"></script>

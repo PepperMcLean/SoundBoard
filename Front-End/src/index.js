@@ -1,5 +1,17 @@
 const buttonLogin = document.getElementById("login")
 const buttonSignup = document.getElementById("signup")
+const signupForm = document.getElementById('hiddenSignup')
+const loginForm = document.getElementById('hiddenLogin')
 
-buttonLogin.addEventListener('click', function(){console.log("itworks")});
-buttonSignup.addEventListener('click', function(){console.log("itworks2")});
+buttonSignup.addEventListener('click', function(){
+  signupForm.hidden = false
+  loginForm.hidden = true
+  buttonSignup.hidden = true
+  buttonLogin.hidden = false
+});
+buttonLogin.addEventListener('click', function(){
+  signupForm.hidden = true
+  loginForm.hidden = false
+  buttonLogin.hidden = true
+  buttonSignup.hidden = false
+});
