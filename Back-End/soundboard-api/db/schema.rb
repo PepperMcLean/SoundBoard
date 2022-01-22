@@ -10,22 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_20_072849) do
+ActiveRecord::Schema.define(version: 2022_01_22_053640) do
 
   create_table "songs", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "activetracks"
-    t.index ["user_id"], name: "index_songs_on_user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "password_digest"
+    t.string "title"
+    t.string "artist"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "songs", "users"
+  create_table "songs_tracks", id: false, force: :cascade do |t|
+    t.integer "song_id", null: false
+    t.integer "track_id", null: false
+    t.index ["song_id"], name: "index_songs_tracks_on_song_id"
+    t.index ["track_id"], name: "index_songs_tracks_on_track_id"
+  end
+
+  create_table "tracks", force: :cascade do |t|
+    t.string "title"
+    t.string "reference"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
 end
