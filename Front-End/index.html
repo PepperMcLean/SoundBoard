@@ -6,30 +6,32 @@
   <title>Document</title>
 </head>
 <body>
+
   <div hidden id="hiddenSignup">
     <h2>Sign Up</h2>
 
-    <form action="/action_page.php">
+    <form onsubmit="itworks();return false">
       <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username" autofocus placeholder="JohnM24"><br>
+      <input type="text" id="signupUsername" name="username" autofocus placeholder="JohnM24"><br>
       <label for="password">Password:</label><br>
-      <input type="text" id="password" name="password" autofocus placeholder="**********"><br><br>
+      <input type="text" id="signupPassword" name="password" autofocus placeholder="**********"><br><br>
       <input type="submit" value="Submit">
     </form>
   </div>
   <div hidden id="hiddenLogin">
     <h2>Log In</h2>
 
-    <form action="/action_page.php">
+    <form onsubmit="getUserLoginInfo();return false">
       <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username" autofocus placeholder="JohnM24"><br>
+      <input type="text" id="loginUsername" name="username" autofocus placeholder="JohnM24"><br>
       <label for="password">Password:</label><br>
-      <input type="text" id="password" name="password" autofocus placeholder="**********"><br><br>
+      <input type="text" id="loginPassword" name="password" autofocus placeholder="**********"><br><br>
       <input type="submit" value="Submit">
     </form>
   </div>
   <button type="button" id="signup">Sign Up</button>
   <button type="button" id="login">Log In</button>
+  <script src="src/user.js"></script>
   <script src="src/index.js"></script>
 </body>
 </html>
