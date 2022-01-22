@@ -4,6 +4,3 @@ class User {
   }
 }
 
-function getUserLoginInfo(){
-  console.log(document.getElementById("loginUsername").value)
-}
