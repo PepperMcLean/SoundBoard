@@ -223,3 +223,33 @@ Migrating to CreateJoinTableSongsTracks (20220122053640)
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mTrack Create (0.8ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "bass1"], ["reference", "../../Back-End/Audio/bass/bass1.mp3"], ["created_at", "2022-01-22 06:02:07.644691"], ["updated_at", "2022-01-22 06:02:07.644691"]]
   [1m[36mTRANSACTION (14.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2022-01-22 06:40:25 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 20.3ms | Allocations: 473)
+Completed 200 OK in 40ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 4081)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-01-22 06:40:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2022-01-22 06:40:32 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.8ms | Allocations: 205)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 861)
+
+
+Started GET "/favicon.ico" for ::1 at 2022-01-22 06:40:32 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/index.html" for ::1 at 2022-01-22 06:45:28 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
