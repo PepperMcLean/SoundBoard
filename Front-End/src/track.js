@@ -3,15 +3,16 @@ class Track {
     this.id = track.id;
     this.title = track.title;
     this.reference = track.reference;
-    allTracks.push(this);
+    this.currentlyLooping = false
+    Track.allTracks.push(this);
   }
 
   static allTracks = []
 
   static fetchTracks(){
-    fetch("http://localhost:3000/tracks")
-    .then(resp => resp.json())
-    .then(console.log)
+    ("http://localhost:3000/tracks")
+    .then(resp => resp.jsfetchon())
+    .then(Track.createTracks)
   }
 
   static createTracks(tracks){
@@ -19,4 +20,6 @@ class Track {
       new Track(t);
     }
   }
+
+  static
 }
