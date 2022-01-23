@@ -1,11 +1,12 @@
-const loginForm = document.getElementById('hiddenLogin')
+const loginForm = document.getElementById('hiddenLogin');
 
 function getUserLoginInfo(){
-  let usernameCheck = document.getElementById("username").value
+  let usernameCheck = document.getElementById("username").value;
   if (usernameCheck.length <= 3){
-    alert("Please enter a username four letters or longer.")
+    alert("Please enter a username four letters or longer.");
   } else {
-    new User(usernameCheck)
-    loginForm.hidden = true
+    new User(usernameCheck);
+    Track.fetchTracks();
+    loginForm.hidden = true;
   }
 }

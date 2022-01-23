@@ -253,3 +253,65 @@ Started GET "/index.html" for ::1 at 2022-01-22 06:45:28 -0600
   
 ActionController::RoutingError (No route matches [GET] "/index.html"):
   
+Started GET "/" for ::1 at 2022-01-22 07:09:46 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.6ms | Allocations: 310)
+Completed 200 OK in 16ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 2419)
+
+
+Started GET "/tracks" for ::1 at 2022-01-22 07:15:31 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 1.2ms | Allocations: 4426)
+
+
+Started GET "/tracks" for ::1 at 2022-01-22 07:17:30 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 721)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 00:58:47 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 6538)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 01:02:28 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 721)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 01:04:57 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 721)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 01:05:38 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 721)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 01:18:20 -0600
+Processing by TracksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 1298)
+
+
