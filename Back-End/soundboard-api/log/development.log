@@ -484,3 +484,425 @@ Processing by TracksController#index as */*
 Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 4064)
 
 
+Started GET "/tracks" for ::1 at 2022-01-23 02:22:51 -0600
+Processing by TracksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 1.3ms | Allocations: 4063)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:23:25 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:23:33 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:24:34 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:26:23 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:31:02 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:31:38 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:32:59 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:33:54 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:38:47 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:39:08 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:41:26 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 3488)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:41:51 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:42:41 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:43:20 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:43:37 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:44:26 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 3492)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:44:44 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:49:41 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:58:12 -0600
+Processing by TracksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 2.0ms | Allocations: 4064)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 02:58:35 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:02:39 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:04:10 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:06:10 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:10:46 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:11:55 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:19:49 -0600
+Processing by TracksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.7ms | Allocations: 4064)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:26:02 -0600
+Processing by TracksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.7ms | Allocations: 4063)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:26:26 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:34:58 -0600
+Processing by TracksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 1.1ms | Allocations: 4063)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:35:16 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:37:39 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSongs (20220120071451)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "songs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "artist" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220120071451"]]
+  [1m[36mTRANSACTION (21.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTracks (20220122052610)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "tracks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "reference" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220122052610"]]
+  [1m[36mTRANSACTION (19.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateJoinTableSongsTracks (20220122053640)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "songs_tracks" ("song_id" integer NOT NULL, "track_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_songs_tracks_on_song_id" ON "songs_tracks" ("song_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_songs_tracks_on_track_id" ON "songs_tracks" ("track_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220122053640"]]
+  [1m[36mTRANSACTION (19.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-01-23 09:41:51.846036"], ["updated_at", "2022-01-23 09:41:51.846036"]]
+  [1m[36mTRANSACTION (16.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "bass1"], ["reference", "../../SoundBoard/Back-End/Audio/bass/bass1.mp3"], ["created_at", "2022-01-23 09:41:56.131657"], ["updated_at", "2022-01-23 09:41:56.131657"]]
+  [1m[36mTRANSACTION (16.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "bass2"], ["reference", "../../SoundBoard/Back-End/Audio/bass/bass2.mp3"], ["created_at", "2022-01-23 09:41:56.152563"], ["updated_at", "2022-01-23 09:41:56.152563"]]
+  [1m[36mTRANSACTION (15.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "bass3"], ["reference", "../../SoundBoard/Back-End/Audio/bass/bass3.mp3"], ["created_at", "2022-01-23 09:41:56.171468"], ["updated_at", "2022-01-23 09:41:56.171468"]]
+  [1m[36mTRANSACTION (15.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "bass4"], ["reference", "../../SoundBoard/Back-End/Audio/bass/bass4.mp3"], ["created_at", "2022-01-23 09:41:56.190807"], ["updated_at", "2022-01-23 09:41:56.190807"]]
+  [1m[36mTRANSACTION (16.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "bass5"], ["reference", "../../SoundBoard/Back-End/Audio/bass/bass5.mp3"], ["created_at", "2022-01-23 09:41:56.211644"], ["updated_at", "2022-01-23 09:41:56.211644"]]
+  [1m[36mTRANSACTION (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "drums1"], ["reference", "../../SoundBoard/Back-End/Audio/drums/drums1.mp3"], ["created_at", "2022-01-23 09:41:56.231525"], ["updated_at", "2022-01-23 09:41:56.231525"]]
+  [1m[36mTRANSACTION (15.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "drums2"], ["reference", "../../SoundBoard/Back-End/Audio/drums/drums2.mp3"], ["created_at", "2022-01-23 09:41:56.252006"], ["updated_at", "2022-01-23 09:41:56.252006"]]
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.4ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "drums3"], ["reference", "../../SoundBoard/Back-End/Audio/drums/drums3.mp3"], ["created_at", "2022-01-23 09:41:56.284261"], ["updated_at", "2022-01-23 09:41:56.284261"]]
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "drums4"], ["reference", "../../SoundBoard/Back-End/Audio/drums/drums4.mp3"], ["created_at", "2022-01-23 09:41:56.302642"], ["updated_at", "2022-01-23 09:41:56.302642"]]
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "drums5"], ["reference", "../../SoundBoard/Back-End/Audio/drums/drums5.mp3"], ["created_at", "2022-01-23 09:41:56.321047"], ["updated_at", "2022-01-23 09:41:56.321047"]]
+  [1m[36mTRANSACTION (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "keys1"], ["reference", "../../SoundBoard/Back-End/Audio/keys/keys1.mp3"], ["created_at", "2022-01-23 09:41:56.340462"], ["updated_at", "2022-01-23 09:41:56.340462"]]
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "keys2"], ["reference", "../../SoundBoard/Back-End/Audio/keys/keys2.mp3"], ["created_at", "2022-01-23 09:41:56.358866"], ["updated_at", "2022-01-23 09:41:56.358866"]]
+  [1m[36mTRANSACTION (15.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "keys3"], ["reference", "../../SoundBoard/Back-End/Audio/keys/keys3.mp3"], ["created_at", "2022-01-23 09:41:56.378046"], ["updated_at", "2022-01-23 09:41:56.378046"]]
+  [1m[36mTRANSACTION (15.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "keys4"], ["reference", "../../SoundBoard/Back-End/Audio/keys/keys4.mp3"], ["created_at", "2022-01-23 09:41:56.396966"], ["updated_at", "2022-01-23 09:41:56.396966"]]
+  [1m[36mTRANSACTION (17.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "keys5"], ["reference", "../../SoundBoard/Back-End/Audio/keys/keys5.mp3"], ["created_at", "2022-01-23 09:41:56.418253"], ["updated_at", "2022-01-23 09:41:56.418253"]]
+  [1m[36mTRANSACTION (26.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "lead1"], ["reference", "../../SoundBoard/Back-End/Audio/lead/lead1.mp3"], ["created_at", "2022-01-23 09:41:56.448204"], ["updated_at", "2022-01-23 09:41:56.448204"]]
+  [1m[36mTRANSACTION (17.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "lead2"], ["reference", "../../SoundBoard/Back-End/Audio/lead/lead1.mp3"], ["created_at", "2022-01-23 09:41:56.468413"], ["updated_at", "2022-01-23 09:41:56.468413"]]
+  [1m[36mTRANSACTION (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "lead3"], ["reference", "../../SoundBoard/Back-End/Audio/lead/lead1.mp3"], ["created_at", "2022-01-23 09:41:56.486636"], ["updated_at", "2022-01-23 09:41:56.486636"]]
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "lead4"], ["reference", "../../SoundBoard/Back-End/Audio/lead/lead1.mp3"], ["created_at", "2022-01-23 09:41:56.504857"], ["updated_at", "2022-01-23 09:41:56.504857"]]
+  [1m[36mTRANSACTION (17.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "vocal1"], ["reference", "../../SoundBoard/Back-End/Audio/vocal/vocal1.mp3"], ["created_at", "2022-01-23 09:41:56.524733"], ["updated_at", "2022-01-23 09:41:56.524733"]]
+  [1m[36mTRANSACTION (15.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.3ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "vocal2"], ["reference", "../../SoundBoard/Back-End/Audio/vocal/vocal2.mp3"], ["created_at", "2022-01-23 09:41:56.543772"], ["updated_at", "2022-01-23 09:41:56.543772"]]
+  [1m[36mTRANSACTION (15.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "vocal3"], ["reference", "../../SoundBoard/Back-End/Audio/vocal/vocal3.mp3"], ["created_at", "2022-01-23 09:41:56.562382"], ["updated_at", "2022-01-23 09:41:56.562382"]]
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "vocal4"], ["reference", "../../SoundBoard/Back-End/Audio/vocal/vocal4.mp3"], ["created_at", "2022-01-23 09:41:56.580765"], ["updated_at", "2022-01-23 09:41:56.580765"]]
+  [1m[36mTRANSACTION (16.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTrack Create (0.2ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "vocal5"], ["reference", "../../SoundBoard/Back-End/Audio/vocal/vocal5.mp3"], ["created_at", "2022-01-23 09:41:56.600223"], ["updated_at", "2022-01-23 09:41:56.600223"]]
+  [1m[36mTRANSACTION (24.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/tracks" for ::1 at 2022-01-23 03:42:07 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.6ms | Allocations: 9321)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:43:47 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 3505)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:44:38 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 3505)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:48:24 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 3505)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:48:50 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3505)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:50:30 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:51:58 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:53:24 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 03:58:42 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 04:01:20 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 04:01:56 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+

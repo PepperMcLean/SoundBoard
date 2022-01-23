@@ -3,15 +3,17 @@ class Track {
     this.id = track.id;
     this.title = track.title;
     this.reference = track.reference;
-    this.currentlyLooping = false
+    this.audio = new Audio(track.reference);
+    this.audio.loop = true;
+    this.currentlyLooping = false;
     Track.allTracks.push(this);
   }
 
   static allTracks = []
 
   static fetchTracks(){
-    ("http://localhost:3000/tracks")
-    .then(resp => resp.jsfetchon())
+    return fetch("http://localhost:3000/tracks")
+    .then(resp => resp.json())
     .then(Track.createTracks)
   }
 
@@ -20,6 +22,25 @@ class Track {
       new Track(t);
     }
   }
-
-  static
+  
+  static createTrackButtons(){
+    //let track = Track.allTracks.find(stuff => stuff.id === 1)
+    let tracks = Track.allTracks
+    for (let t of tracks){
+      let btn = document.createElement("button");
+      btn.innerHTML = t.title;
+      btn.id = t.id;
+      btn.onclick = function playTrack(){
+        let track = Track.allTracks.find(stuff => stuff.id === parseInt(this.id))
+        if (track.currentlyLooping === false){
+          track.audio.play()
+          track.currentlyLooping = true
+        } else {
+          track.audio.pause()
+          track.currentlyLooping = false
+        }
+      };
+      document.body.appendChild(btn);
+    }
+  }
 }
