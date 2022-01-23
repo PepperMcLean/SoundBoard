@@ -1031,3 +1031,26 @@ Migrating to CreateJoinTableSongsTracks (20220122053640)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mTrack Create (0.6ms)[0m  [1m[32mINSERT INTO "tracks" ("title", "reference", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "vocal5"], ["reference", "../../SoundBoard/Back-End/Audio/vocal/vocal5.mp3"], ["created_at", "2022-01-23 13:01:49.918998"], ["updated_at", "2022-01-23 13:01:49.918998"]]
   [1m[36mTRANSACTION (18.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/tracks" for ::1 at 2022-01-23 07:02:58 -0600
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 0.6ms | Allocations: 9360)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 07:08:13 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.2ms | Allocations: 3505)
+
+
+Started GET "/tracks" for ::1 at 2022-01-23 07:08:42 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 3505)
+
+

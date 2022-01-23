@@ -22,22 +22,27 @@ class Track {
       new Track(t);
     }
   }
+
+  static activeTracks(){
+    let activeTracks = Track.allTracks.filter(stuff => stuff.currentlyLooping === true);
+    return activeTracks;
+  }
   
   static createTrackButtons(){
     //let track = Track.allTracks.find(stuff => stuff.id === 1)
-    let tracks = Track.allTracks
+    let tracks = Track.allTracks;
     for (let t of tracks){
       let btn = document.createElement("button");
       btn.innerHTML = t.title;
       btn.id = t.id;
       btn.onclick = function playTrack(){
-        let track = Track.allTracks.find(stuff => stuff.id === parseInt(this.id))
+        let track = Track.allTracks.find(stuff => stuff.id === parseInt(this.id));
         if (track.currentlyLooping === false){
-          track.audio.play()
-          track.currentlyLooping = true
+          track.audio.play();
+          track.currentlyLooping = true;
         } else {
-          track.audio.pause()
-          track.currentlyLooping = false
+          track.audio.pause();
+          track.currentlyLooping = false;
         }
       };
       document.body.appendChild(btn);
