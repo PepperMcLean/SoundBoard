@@ -33,4 +33,18 @@ class Song {
       body: JSON.stringify(data)
     });
   }
+
+  static fetchSongs() {
+    return fetch("http://localhost:3000/songs")
+    .then(resp => resp.json())
+    .then(Song.songHash)
+  }
+
+  static songHash(hash) {
+    console.log(hash)
+  }
+
+  static displaySongs(){
+    
+  }
 }
