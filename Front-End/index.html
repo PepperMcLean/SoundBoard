@@ -1,5 +1,10 @@
 <html lang="en">
 <head>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +23,8 @@
   <div id= "sidebar" class="sidebar">
   </div>
   <div id="buttons" class="buttons">
+    <button type="button" onclick="stopSounds()">Pause all Sound!</button>
   </div>
-  <button type="button" onclick="stopSounds()">Pause all Sound!</button>
-  <button type="button" onclick="Song.fetchSongs()">console test</button>
   <div hidden="true" id="hiddenSong" class="hiddenSong">
     <form onsubmit="Song.createSong();return false">
       <label for="songTitle">Song Title:</label><br>

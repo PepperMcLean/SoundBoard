@@ -8,9 +8,13 @@ async function getUserLoginInfo(){
     new User(usernameCheck);
     await Track.fetchTracks();    
     Track.createTrackButtons();
+    await Song.fetchSongs();
+    Song.displaySongs();
+    console.log("status")
     loginForm.hidden = true;
     const songForm = document.getElementById('hiddenSong');
     songForm.hidden = false;
+
   }
 }
 
