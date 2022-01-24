@@ -13,3 +13,11 @@ async function getUserLoginInfo(){
     songForm.hidden = false;
   }
 }
+
+function stopSounds() {
+  var sounds = Track.activeTracks();
+  for (let s of sounds){
+    s.audio.pause();
+    s.currentlyLooping = false;
+  }
+}
