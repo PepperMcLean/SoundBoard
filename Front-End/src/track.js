@@ -45,7 +45,7 @@ class Track {
           track.currentlyLooping = false;
         }
       };
-      document.body.appendChild(btn);
+      document.getElementById("buttons").appendChild(btn);
     }
   }
 }

@@ -15,6 +15,18 @@
       <input type="submit" value="Submit">
     </form>
   </div>
+  <div id= "sidebar" class="sidebar">
+  </div>
+  <div id="buttons" class="buttons">
+  </div>
+  <div hidden="true" id="hiddenSong" class="hiddenSong">
+    <form onsubmit="Song.createSong();return false">
+      <label for="songTitle">Song Title:</label><br>
+      <input type="text" id="songTitle" name="songTitle" autofocus placeholder="My First Song"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <script src="src/song.js"></script>
   <script src="src/track.js"></script>
   <script src="src/user.js"></script>
   <script src="src/index.js"></script>
