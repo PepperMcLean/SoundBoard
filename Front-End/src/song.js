@@ -21,6 +21,8 @@ class Song {
       let test = new Song(data);
       //console.log(test.active_tracks[0].id);
       test.postSong()
+      alert("Submitted!");
+      document.getElementById("songTitle").value = ''
     }
   }
 

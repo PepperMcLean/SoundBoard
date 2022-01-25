@@ -7271,3 +7271,357 @@ Processing by SongsController#index as */*
 Completed 200 OK in 34ms (Views: 28.8ms | ActiveRecord: 2.2ms | Allocations: 11080)
 
 
+Started GET "/tracks" for ::1 at 2022-01-25 12:34:51 -0600
+Processing by TracksController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 2.6ms | Allocations: 4063)
+
+
+Started GET "/songs" for ::1 at 2022-01-25 12:34:51 -0600
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:13:in `index'
+  [1m[36mTrack Load (0.7ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 1]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 2]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 3]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 4]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 5]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 6]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 7]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 8]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 9]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 2.0ms | Allocations: 11110)
+
+
+Started GET "/tracks" for ::1 at 2022-01-25 13:27:14 -0600
+Processing by TracksController#index as */*
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 4.3ms | Allocations: 4064)
+
+
+Started GET "/songs" for ::1 at 2022-01-25 13:27:15 -0600
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:13:in `index'
+  [1m[36mTrack Load (0.4ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 1]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 2]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 3]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 4]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 5]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 6]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 7]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 8]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 9]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+Completed 200 OK in 53ms (Views: 43.1ms | ActiveRecord: 2.1ms | Allocations: 11113)
+
+
+Started POST "/songs" for ::1 at 2022-01-25 13:29:08 -0600
+Processing by SongsController#create as JSON
+  Parameters: {"title"=>"ITS TOO LIT", "artist"=>"jack", "active_tracks"=>[{"id"=>1, "title"=>"bass1", "reference"=>"../../SoundBoard/Back-End/Audio/bass/bass1.mp3", "audio"=>{}, "currentlyLooping"=>true}, {"id"=>6, "title"=>"drums1", "reference"=>"../../SoundBoard/Back-End/Audio/drums/drums1.mp3", "audio"=>{}, "currentlyLooping"=>true}, {"id"=>14, "title"=>"keys4", "reference"=>"../../SoundBoard/Back-End/Audio/keys/keys4.mp3", "audio"=>{}, "currentlyLooping"=>true}], "song"=>{"title"=>"ITS TOO LIT", "artist"=>"jack"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mSong Create (2.8ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ITS TOO LIT"], ["artist", "jack"], ["created_at", "2022-01-25 19:29:08.642616"], ["updated_at", "2022-01-25 19:29:08.642616"]]
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.5ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 10], ["track_id", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (16.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.4ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 10], ["track_id", 6]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (15.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.4ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 10], ["track_id", 14]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (15.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+Completed 200 OK in 112ms (Views: 0.3ms | ActiveRecord: 67.5ms | Allocations: 18780)
+
+
+Started POST "/songs" for ::1 at 2022-01-25 13:29:10 -0600
+Processing by SongsController#create as JSON
+  Parameters: {"title"=>"ITS TOO LIT", "artist"=>"jack", "active_tracks"=>[{"id"=>1, "title"=>"bass1", "reference"=>"../../SoundBoard/Back-End/Audio/bass/bass1.mp3", "audio"=>{}, "currentlyLooping"=>true}, {"id"=>6, "title"=>"drums1", "reference"=>"../../SoundBoard/Back-End/Audio/drums/drums1.mp3", "audio"=>{}, "currentlyLooping"=>true}, {"id"=>14, "title"=>"keys4", "reference"=>"../../SoundBoard/Back-End/Audio/keys/keys4.mp3", "audio"=>{}, "currentlyLooping"=>true}], "song"=>{"title"=>"ITS TOO LIT", "artist"=>"jack"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ITS TOO LIT"], ["artist", "jack"], ["created_at", "2022-01-25 19:29:10.829201"], ["updated_at", "2022-01-25 19:29:10.829201"]]
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (15.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.3ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 11], ["track_id", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (19.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.3ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 11], ["track_id", 6]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.7ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 11], ["track_id", 14]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (16.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+Completed 200 OK in 94ms (Views: 0.3ms | ActiveRecord: 68.7ms | Allocations: 18765)
+
+
+Started GET "/tracks" for ::1 at 2022-01-25 13:29:24 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms | Allocations: 3487)
+
+
+Started GET "/songs" for ::1 at 2022-01-25 13:29:24 -0600
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:13:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 1]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 2]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 3]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 4]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 5]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 6]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 7]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 8]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 9]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 10]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 11]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+Completed 200 OK in 56ms (Views: 51.6ms | ActiveRecord: 2.0ms | Allocations: 13656)
+
+
+Started GET "/tracks" for ::1 at 2022-01-25 13:30:51 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 3487)
+
+
+Started GET "/songs" for ::1 at 2022-01-25 13:30:51 -0600
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:13:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 1]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 2]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 3]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 4]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 5]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 6]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 7]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 8]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 9]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 10]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 11]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 1.6ms | Allocations: 13654)
+
+
+Started POST "/songs" for ::1 at 2022-01-25 13:31:17 -0600
+Processing by SongsController#create as JSON
+  Parameters: {"title"=>"vibin hard", "artist"=>"jack", "active_tracks"=>[{"id"=>3, "title"=>"bass3", "reference"=>"../../SoundBoard/Back-End/Audio/bass/bass3.mp3", "audio"=>{}, "currentlyLooping"=>true}, {"id"=>9, "title"=>"drums4", "reference"=>"../../SoundBoard/Back-End/Audio/drums/drums4.mp3", "audio"=>{}, "currentlyLooping"=>true}, {"id"=>21, "title"=>"vocal2", "reference"=>"../../SoundBoard/Back-End/Audio/vocal/vocal2.mp3", "audio"=>{}, "currentlyLooping"=>true}], "song"=>{"title"=>"vibin hard", "artist"=>"jack"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "vibin hard"], ["artist", "jack"], ["created_at", "2022-01-25 19:31:17.820911"], ["updated_at", "2022-01-25 19:31:17.820911"]]
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (15.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.3ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 12], ["track_id", 3]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.3ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 12], ["track_id", 9]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (18.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.3ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 12], ["track_id", 21]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (16.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+Completed 200 OK in 91ms (Views: 0.3ms | ActiveRecord: 68.2ms | Allocations: 18005)
+
+
+Started GET "/tracks" for ::1 at 2022-01-25 13:33:53 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/songs" for ::1 at 2022-01-25 13:33:53 -0600
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:13:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 1]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 2]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 3]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 4]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 5]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 6]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 7]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 8]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 9]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 10]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.3ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 11]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 12]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 2.0ms | Allocations: 14942)
+
+
+Started POST "/songs" for ::1 at 2022-01-25 13:34:16 -0600
+Processing by SongsController#create as JSON
+  Parameters: {"title"=>"flute it up", "artist"=>"jack", "active_tracks"=>[{"id"=>5, "title"=>"bass5", "reference"=>"../../SoundBoard/Back-End/Audio/bass/bass5.mp3", "audio"=>{}, "currentlyLooping"=>true}, {"id"=>17, "title"=>"lead2", "reference"=>"../../SoundBoard/Back-End/Audio/lead/lead2.mp3", "audio"=>{}, "currentlyLooping"=>true}], "song"=>{"title"=>"flute it up", "artist"=>"jack"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mSong Create (0.4ms)[0m  [1m[32mINSERT INTO "songs" ("title", "artist", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "flute it up"], ["artist", "jack"], ["created_at", "2022-01-25 19:34:16.564907"], ["updated_at", "2022-01-25 19:34:16.564907"]]
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (17.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:3:in `create'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.4ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 13], ["track_id", 5]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (20.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mSong::HABTM_Tracks Create (0.3ms)[0m  [1m[32mINSERT INTO "songs_tracks" ("song_id", "track_id") VALUES (?, ?)[0m  [["song_id", 13], ["track_id", 17]]
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+  [1m[36mTRANSACTION (18.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/songs_controller.rb:6:in `block in create'
+Completed 200 OK in 75ms (Views: 0.3ms | ActiveRecord: 57.8ms | Allocations: 13989)
+
+
+Started GET "/tracks" for ::1 at 2022-01-25 13:34:33 -0600
+Processing by TracksController#index as */*
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks"[0m
+  ↳ app/controllers/tracks_controller.rb:3:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/songs" for ::1 at 2022-01-25 13:34:33 -0600
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:13:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 1]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 2]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 3]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 4]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 5]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 6]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 7]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 8]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 9]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 10]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 11]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.2ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 12]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+  [1m[36mTrack Load (0.1ms)[0m  [1m[34mSELECT "tracks".* FROM "tracks" INNER JOIN "songs_tracks" ON "tracks"."id" = "songs_tracks"."track_id" WHERE "songs_tracks"."song_id" = ?[0m  [["song_id", 13]]
+  ↳ app/controllers/songs_controller.rb:17:in `index'
+Completed 200 OK in 42ms (Views: 37.9ms | ActiveRecord: 2.0ms | Allocations: 16108)
+
+
