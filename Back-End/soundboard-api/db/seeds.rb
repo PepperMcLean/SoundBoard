@@ -24,6 +24,7 @@ Track.create(title:"lead1", reference:"../../SoundBoard/Back-End/Audio/lead/lead
 Track.create(title:"lead2", reference:"../../SoundBoard/Back-End/Audio/lead/lead2.mp3")
 Track.create(title:"lead3", reference:"../../SoundBoard/Back-End/Audio/lead/lead3.mp3")
 Track.create(title:"lead4", reference:"../../SoundBoard/Back-End/Audio/lead/lead4.mp3")
+Track.create(title:"lead5", reference:"../../SoundBoard/Back-End/Audio/lead/lead5.mp3")
 Track.create(title:"vocal1", reference:"../../SoundBoard/Back-End/Audio/vocal/vocal1.mp3")
 Track.create(title:"vocal2", reference:"../../SoundBoard/Back-End/Audio/vocal/vocal2.mp3")
 Track.create(title:"vocal3", reference:"../../SoundBoard/Back-End/Audio/vocal/vocal3.mp3")
