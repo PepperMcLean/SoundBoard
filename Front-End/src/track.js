@@ -35,6 +35,7 @@ class Track {
       let btn = document.createElement("button");
       btn.innerHTML = t.title;
       btn.id = t.id;
+      btn.className = "btn btn-outline-light"
       btn.onclick = function playTrack(){
         let track = Track.allTracks.find(stuff => stuff.id === parseInt(this.id));
         if (track.currentlyLooping === false){

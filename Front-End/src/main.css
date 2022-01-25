@@ -1,0 +1,22 @@
+
+
+
+
+body {
+  background-image: url(https://wallpaperaccess.com/full/782148.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+}
+
+
+.square-box {
+  color: white;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: -1;
+}

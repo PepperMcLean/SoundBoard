@@ -15,7 +15,7 @@ class Song {
   static createSong() {
     let songLengthCheck = document.getElementById("songTitle").value;
     if ((songLengthCheck.length <= 3) || (Track.activeTracks().length < 2)){
-      alert("Please enter a song title four letters or longer with at least two tracks.");
+      alert("Please enter a song title four letters or longer, with at least two tracks.");
     } else {
       let data = {title: songLengthCheck, artist: User.currentUser.name, active_tracks: Track.activeTracks()}
       let test = new Song(data);
@@ -71,6 +71,7 @@ class Song {
       let btn = document.createElement("button");
       btn.id = s.id
       btn.innerHTML = "Play"
+      btn.className = "btn btn-outline-primary"
       btn.onclick = function playSong(){
         stopSounds();
         let song = Song.allSongs.find(stuff => stuff.id === parseInt(this.id));
